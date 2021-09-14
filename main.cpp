@@ -4,7 +4,9 @@
 int main() {
     std::string path = "./assets/test_1.audit";
 
-    XMLParser
+    XMLParser parser(path);
+
+    parser
 
     return 0;
 }

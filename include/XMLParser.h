@@ -2,6 +2,7 @@
 // Created by isaca on 9/14/2021.
 //
 
+#include "XMLConfig.h"
 #include <string>
 #include <fstream>
 #include <iostream>
@@ -12,8 +13,9 @@
 class XMLParser {
 private:
     std::string source;
-
     std::map<std::string, std::vector<std::string>> tree;
+
+    XMLConfig config;
 
     void read_file(const std::string &path);
 public:
