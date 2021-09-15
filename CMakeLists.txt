@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
-project(xmlParser)
+project(auditParser)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(xmlParser main.cpp include/XMLParser.h src/XMLParser.cpp include/XMLConfig.h)
+add_executable(auditParser main.cpp include/AuditParser.h src/AuditParser.cpp include/AuditConfig.h)

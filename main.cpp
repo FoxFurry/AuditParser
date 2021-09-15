@@ -1,12 +1,12 @@
 #include <iostream>
-#include "include/XMLParser.h"
+#include "include/AuditParser.h"
 
 int main() {
     std::string path = "./assets/test_1.audit";
 
-    XMLParser parser(path);
+    AuditParser parser(path);
 
-    parser
+    parser.parse();
 
     return 0;
 }

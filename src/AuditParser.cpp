@@ -2,9 +2,9 @@
 // Created by isaca on 9/14/2021.
 //
 
-#include "../include/XMLParser.h"
+#include "../include/AuditParser.h"
 
-void XMLParser::read_file(const std::string &path) {
+void AuditParser::read_file(const std::string &path) {
     std::ifstream input(path);
 
     if (!input.good()) {
@@ -19,7 +19,7 @@ void XMLParser::read_file(const std::string &path) {
     source = buffer.str();
 }
 
-XMLParser::XMLParser(const std::string &path) {
+AuditParser::AuditParser(const std::string &path) {
     read_file(path);
 }
 

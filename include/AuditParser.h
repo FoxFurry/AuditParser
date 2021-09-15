@@ -2,7 +2,7 @@
 // Created by isaca on 9/14/2021.
 //
 
-#include "XMLConfig.h"
+#include "AuditConfig.h"
 #include <string>
 #include <fstream>
 #include <iostream>
@@ -10,7 +10,7 @@
 #include <vector>
 #include <map>
 
-class XMLParser {
+class AuditParser {
 private:
     std::string source;
     std::map<std::string, std::vector<std::string>> tree;
@@ -19,9 +19,8 @@ private:
 
     void read_file(const std::string &path);
 public:
-    XMLParser(const std::string &path);
-    ~XMLParser();
+    AuditParser(const std::string &path);
+    ~AuditParser();
 
     void parse();
-
 };
